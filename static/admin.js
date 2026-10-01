@@ -999,7 +999,7 @@ document.addEventListener(
         async function promote() {
             if (
                 !window.confirm(
-                    "Promote this passing candidate? The current active model will be backed up first. Humor Bot must be restarted afterward."
+                    "Promote this passing candidate? The current active model will be backed up first. DANG must be restarted afterward."
                 )
             ) {
                 return;
@@ -1044,7 +1044,7 @@ document.addEventListener(
         async function rollback() {
             if (
                 !window.confirm(
-                    "Restore the previous active model from the most recent promotion backup? Humor Bot must be restarted afterward."
+                    "Restore the previous active model from the most recent promotion backup? DANG must be restarted afterward."
                 )
             ) {
                 return;
@@ -1161,3 +1161,4 @@ fetch('/admin/status').then(r => r.json()).then(status => {
   disable();
   new MutationObserver(disable).observe(document.body, {childList:true,subtree:true,attributes:true,attributeFilter:['disabled']});
 }).catch(() => {});
+
