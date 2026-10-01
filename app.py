@@ -61,7 +61,7 @@ initialize_database()
 model_admin = ModelAdminService(RUNTIME_ROOT)
 
 app = FastAPI(
-    title="Humor Detection Application",
+    title="DANG",
     version="0.2.3-milestone2-final",
     description=(
         "Humor classification, persistent correction review, "
@@ -320,3 +320,4 @@ if __name__ == "__main__":
         port=int(os.getenv("PORT", "8000")),
         reload=False,
     )
+
